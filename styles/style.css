@@ -17,9 +17,30 @@
 }
 
 .banner-image{
-    height: 310px;
-    width: 520px;
+    height: 315px;
+    width: inherit;
     margin-top: 45px;
-    margin-right: 20px;
-    border: 7px solid white;
+    margin-left: 20px;
+    border: 5px solid white;
+}
+
+.banner-right{
+    margin-left: 20px;
+    margin-top: 111px;
+}
+
+
+
+.section-top{
+    margin-left: 225px;
+    margin-top: 20px;
+}
+
+.section-top>h6{
+    display: inline-block;
+}
+
+.section-top>input{
+    width: 250px;
+    display: inline;
 }
