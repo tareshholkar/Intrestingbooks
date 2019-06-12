@@ -2,68 +2,162 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <title>Accessibility Test</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="John Doe">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="styles/bootstrap.min.css">
-    <link rel="stylesheet" href="styles/style.css">
-    <title>Intrrestinbooks.com</title>
+
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-
-    <body>
-        <div class="container">
-            <header class="header">
-                <div class="row">
-                    <div class="heading-parent col-sm-2 col-dm-2 col-lg-12">
-                        <h1 class="heading">Intrestingbooks.com</h1>
+    <!-- <header>
+        <a class="skip-main" href="#main">SKIP TO MAIN CONTENT </a>
+        <h1>Interestingbooks.com</h1>
+        <h2>A library of great books.</h2>
+        <nav class="topnav">
+            <ul>
+                <li><a href="#">STORE</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <div class="search-container">
+                        <form action="">
+                        <button type="submit"><i class="fa fa-shopping-cart" style="font-size: 25px"></i></button>
+                        </form>
                     </div>
-                </div>
-                <div class="row">
-                    <nav>
-                        <a class="navigation col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2" href="">Store</a>
-                        <a class="navigation col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2" href="">About</a>
-                        <a class="navigation col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2" href="">Contact</a>
-                    </nav>
-                </div>
-            </header>
-            <main class="main">
-                <div class="banner">
-                    <div class="row">
-                        <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                            <img class="banner-image" src="images/image1.jpg" alt="" srcset="">
-                        </div>
-                        <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                            <div class="banner-right">
-                                <h2 class="">Welcome to <br> Intresting Books </h2>
-                                <h6>Find out more about books, and more in our <br> special showcase area.</h6>
-                                <button class="btn-success" type="button">Visit Book Showcase</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <section class="section">
-                    <div class="section-top form-group ">
-                        <h6>Search our entire library of books </h6>
+            </ul>
+        </nav>
+    </header> -->
 
-                        
-                        <input type="text" class="form-control" placeholder="Search">
-                        <span class="glyphicon glyphicon-search"></span>
-                        <!-- <div class="">
-                                <i class="glyphicon glyphicon-search"></i>
-                                <input type="text" class="form-control" placeholder="Search" />
-                              </div>
+    <header>
+        <a class="skip-main" href="#main">SKIP TO MAIN CONTENT </a>
+        <h1 tabindex="-1" aria-label="Link directing to Interestingbooks.com">Interestingbooks.com</h1>
+        <!-- <h2>A library of great books.</h2> -->
 
-                        <input class="form-control" type="text" name="" id="" placeholder=""> -->
-                    </div>
-                </section>
-                <article class="article"></article>
-                <aside class="aside"></aside>
-            </main>
-            <footer class="footer"></footer>
+        <div class="topnav" role="navigation">
+            <a class="active" href="#home">STORE</a>
+            <a href="#about">ABOUT</a>
+            <a href="#contact">CONTACT</a>
+            <div class="search-container">
+                <form action="">
+                <button type="submit"><i class="fa fa-shopping-cart" style="font-size: 25px"></i></button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="banner">
+            <div>
+                <img src="images/banner.jpg" alt="">
+            </div>
+            <h3>Welcome to<br> Interesting Books.</h3>
+            <p>Find out more about our books, and more in our<br>special showcase area.</p>
+            <button>View Book Showcase</button>
+        </section>
+
+        <div class="search_block">
+            <p>Search our entire library of books</p>
+            <div class="searchContainer">
+                <input class="searchBox" type="search" name="search" placeholder="Search library">
+                <i class="fa fa-search searchIcon"></i>
+            </div>
         </div>
 
-    </body>
+        <section class="portfolio">
+            <article>
+                <div class="widgets_div">
+                    <div class="icon_div">
+                        <span><i class="fa fa-book" style="font-size: 35px"></i></span>
+                    </div>
+                    <div class="text_div">
+                        <span><b>Book of the day</b></span>
+                    </div>
+                </div>
+                <div class="book1">
+                    <div class="book" role="figure" aria-labelledby="bookcaption">
+                        <img src="images/book1.jpg" alt="The Hot Zone">
+                    </div>
+                    <button>Add to Cart</button>
+                    <h3 id="bookcaption">The Hot Zone</h3>
+                    <p>Edition: ebook</p>
+                    <h3>$8.00</h3>
+                    <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                        Ipsum
+                        has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                        galley of type and scrambled it to make a type specimen book.</p>
+                    <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                        Ipsum
+                        has been the industry's standard dummy text ever since the 1500s, when an unknown printer took .</p> 
+                    <p1>Read more</p1>
+                 <!-- <button class="read_more" onclick="myFunction()">Read more</button>
+                    <p id="moreinfo" aria-live="polite"></p> --> 
+                </div>
+            </article>
+
+            <hr>
+        </section>
+
+        <section class="newsletter">
+            <article>
+                <h2>Newsletter sign-up</h2>
+                <h4>Email<asterisk>*</asterisk>
+                    <form action="#">
+                        <input type="search" name="search"><br>
+                        <button>Submit</button>
+                        <!-- <div id="saveChanges" role="button" aria-pressed="false">Submit</div> -->
+                    </form>
+            </article>
+
+            <img src="images/book.jpg" alt="book">
+        </section>
+
+        <section class="featured_books">
+            <article>
+                <h2>Featured Books</h2>
+                <div class="article1" role="figure" aria-labelledby="caption1">
+                    <img src="images/book4.jpg"
+                        alt="Web Accessibility-web standard and regular complince book image">
+                    <p id="caption1">
+                        <h2 tabindex="0">Web Accessibility-web standard and regular complince book cover image</h2>
+                        <del>$10.00 </del> $5.00
+                    </p>
+                </div>
+                <div class="article2" role="figure" aria-labelledby="caption2">
+                    <img src="images/book3.jpg" alt="Social Engineering book image">
+                    <p id="caption2">
+                        <h2 tabindex="0">Social Engineering</h2>
+                        $5.00
+                    </p>
+                </div>
+                <div class="article3" role="figure" aria-labelledby="caption3">
+                    <img src="images/book2.jpg" alt="Spot Says Goodnight book image">
+                    <p id="caption3">
+                        <h2 tabindex="0">Spot Says Goodnight </h2>
+                        <del>$10.00 </del> $5.00
+                    </p>
+                </div>
+                <a href="#">View all</a>
+            </article>
+
+        </section>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2015-Interesting Books</p>
+    </footer>
+
+    <!-- <script>
+        var itemCount = 0;
+        $('.add').click(function () {
+            itemCount++;
+            $('#itemCount').html(itemCount).css('display', 'block');
+        });
+        function myFunction() {
+            document.getElementById("moreinfo").innerHTML = "Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries";
+        }
+    </script> -->
+</body>
 
 </html>
