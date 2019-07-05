@@ -1,0 +1,273 @@
+*{
+    box-sizing:border-box;
+  }
+
+.container{
+
+}
+
+.header{
+
+}
+
+.heading>h1{
+    color: green;
+    float: left;
+    width: 60%;
+
+}
+
+.heading>p{
+    margin-top: 20px;
+    float: left;
+    width: 40%;
+
+}
+
+.topnav>a{
+    color: black;
+    float: left;
+    width: 10%;
+
+    text-align: center;
+    text-decoration: none;
+}
+
+.topnav>a:hover{
+    background-color: green;
+    color: #fff;
+}
+
+.icon{
+    float: right;
+}
+
+/* ------------------------------------- Header End -------------------------------------*/
+
+.main{
+
+}
+
+.banner{
+
+    float: left;
+    width: 100%;
+    background-color: #bbbbbb;
+    padding: 10px;
+}
+
+.bnr-left>img{  
+    border:7px solid #fff;      
+    width: 50%;
+    float: left;    
+}
+
+.bnr-right{
+
+    float: left;
+    width: 40%;
+    margin-top: 80px;
+    margin-left: 28px;
+}
+
+/* ------------------------------------- Banner End -------------------------------------*/
+
+.search_block{
+
+    float: left;
+    width: 100%;
+}
+
+.search_block>label{
+
+    float: left;
+    margin-left: 22%;
+    width: 30%;
+    text-align: center;
+}
+
+.searchContainer{
+
+    float: left;
+    width: 30%;
+}
+
+/* ------------------------------------- Search Section End -------------------------------------*/
+
+.widgets_div{
+
+    width: 100%;
+    float: left;
+}
+
+.widgets_div > .icon_div{
+    float: left;
+    width: 4%;
+}
+
+.widgets_div > .text_div{
+    float: left;
+    width: 50%;
+    color: #248716;
+    font-size: 30px; 
+}
+
+/* ------------------------------------- Book Heading Div End -------------------------------------*/
+
+.book1{
+    float: left;
+    
+}
+
+.book1 > .book1-left > img{
+
+    float: left;
+    width: 30%;
+}
+
+.book1 > .book1-right{
+
+    float: left;
+    width: 70%;;
+    margin-top: 20px;
+}
+
+.book1 > .book1-right >h3{
+    float: left;
+    width: 50%;
+
+}
+
+.book1 > .book1-right >button{
+    margin-right: 5px;
+    float: right;
+    width: 18%;
+    margin-top: 5px;
+}
+
+.book1 > .book1-right >p{
+    float: left;
+    width: 100%;
+    margin-top: 20px;    
+}
+/* ------------------------------------- Books End -------------------------------------*/
+
+.newsletter{
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+    
+}
+
+.newsletter > .news-left{
+    float: left;
+    width: 50%;
+ 
+}
+
+.newsletter > img{    
+    float: left;
+    width: 30%;
+}
+
+/* ------------------------------------- Newsletter End -------------------------------------*/
+
+
+.featured_books > h2{
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.featured_books > .article1, .featured_books > .article2, .featured_books > .article3{
+    float: left;
+    width: 30%;
+ 
+
+}
+
+.article-img{
+    height: 345px;
+    width: 310px;
+}
+
+.viewall{
+    float: right;
+    width: 5%;
+}
+
+footer{
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+/* ------------------------------------- Media Queries Start -------------------------------------*/
+
+@media only screen and (max-width:992px) {
+    /* For small screens: */
+    .bnr-right{       
+        margin-top: 18px;
+        margin-left: 24px;
+        }
+    }
+
+@media only screen and (max-width:768px) {
+    /* For mobile phones: */
+     .heading>p, .topnav>a, .icon, .bnr-left>img, .bnr-right, .search_block>label, .searchContainer, .book1 > .book1-left > img, .book1 > .book1-right, .newsletter > .news-left, .newsletter > img, .featured_books > h2, .featured_books > .article1, .featured_books > .article2, .featured_books > .article3, .article-img, .viewall {
+      width:100%;
+    }
+
+    .heading>h1{
+        color: green;
+        float: none;
+        width: 100%;
+        font-size: 39px;
+    } 
+
+    .heading>p{
+        text-align: center;    
+    }
+
+    /* .icon{
+        align-content: center;
+    }     */
+
+    .bnr-right{       
+        margin-top: 12px;
+        margin-left: 0px;
+    }
+
+    .search_block>label{
+        margin-top: 8px;
+        margin-left: 0px;
+        
+    }
+    
+    .searchContainer{
+       text-align: center;
+    }
+
+    .widgets_div > .icon_div{
+        margin-right: 10px;
+        width: 7%;
+        margin-left: 57px;
+        margin-top: 10px;
+    }
+
+    .widgets_div > .text_div{
+        width: 61%;
+    }
+
+    
+    .viewall {
+            float: left;
+            width: 100%;
+            text-align: center;
+            margin-top: 10px;
+            
+    }
+    
+}

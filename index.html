@@ -2,123 +2,114 @@
 <html lang="en">
 
 <head>
-    <title>Accessibility Test</title>
-    <meta charset="utf-8">
-    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
-    <meta name="author" content="John Doe">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IntrestingBooks</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.4.1.js"></script>
 </head>
 
 <body>
-    <!-- <header>
-        <a class="skip-main" href="#main">SKIP TO MAIN CONTENT </a>
-        <h1>Interestingbooks.com</h1>
-        <h2>A library of great books.</h2>
-        <nav class="topnav">
-            <ul>
-                <li><a href="#">STORE</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">CONTACT</a></li>
-                <div class="search-container">
-                        <form action="">
-                        <button type="submit"><i class="fa fa-shopping-cart" style="font-size: 25px"></i></button>
-                        </form>
-                    </div>
-            </ul>
-        </nav>
-    </header> -->
+    <div class="container">
 
-    <header>
-        <a class="skip-main" href="#main">SKIP TO MAIN CONTENT </a>
-        <h1 tabindex="-1" aria-label="Link directing to Interestingbooks.com">Interestingbooks.com</h1>
-        <!-- <h2>A library of great books.</h2> -->
-
-        <div class="topnav" role="navigation">
-            <a class="active" href="#home">STORE</a>
-            <a href="#about">ABOUT</a>
-            <a href="#contact">CONTACT</a>
-            <div class="search-container">
-                <form action="">
-                <button type="submit"><i class="fa fa-shopping-cart" style="font-size: 25px"></i></button>
-                </form>
+        <div class="header">
+            <div class="heading">
+                <h1>Intrestingbooks.com</h1> <!-- yehe vo -->
+                <p>A library of great Books.</p>
             </div>
-        </div>
-    </header>
-
-    <main id="main">
-        <section class="banner">
-            <div>
-                <img src="images/banner.jpg" alt="">
+            <div class="topnav" role="navigation">
+                <a class="active" href="#store">STORE</a>
+                <a href="#about">ABOUT</a>
+                <a href="#contact">CONTACT</a>
             </div>
-            <h3>Welcome to<br> Interesting Books.</h3>
-            <p>Find out more about our books, and more in our<br>special showcase area.</p>
-            <button>View Book Showcase</button>
-        </section>
-
-        <div class="search_block">
-            <p>Search our entire library of books</p>
-            <div class="searchContainer">
-                <input class="searchBox" type="search" name="search" placeholder="Search library">
-                <i class="fa fa-search searchIcon"></i>
+            <div class="icon">
+                icon
             </div>
         </div>
 
-        <section class="portfolio">
+        <main id="main">
+            <section class="banner">
+                <div class="bnr-left">
+                    <img src="images/banner.jpg" alt="">
+                </div>
+                <div class="bnr-right">
+                    <h3>Welcome to<br> Interesting Books.</h3>
+                    <p>Find out more about our books, and more in our<br>special showcase area.</p>
+                    <button>View Book Showcase</button>
+                </div>
+            </section>
+
+            <div class="search_block">
+                <label>Search our entire library of books</label>
+                <div class="searchContainer">
+                    <input class="searchBox" type="search" name="search" placeholder="Search library">
+                    <i class="fa fa-search searchIcon"></i>
+                </div>
+            </div>
+
             <article>
                 <div class="widgets_div">
-                    <div class="icon_div">
-                        <span><i class="fa fa-book" style="font-size: 35px"></i></span>
+                    <span class="icon_div">icon</span>
+                    <span class="text_div"><b>Book of the day</b></span>
+                    <!-- <div class="icon_div">
+                        <span>icon</span>
                     </div>
                     <div class="text_div">
                         <span><b>Book of the day</b></span>
-                    </div>
+                    </div> -->
                 </div>
+
                 <div class="book1">
-                    <div class="book" role="figure" aria-labelledby="bookcaption">
+
+                    <div class="book1-left" role="figure" aria-labelledby="bookcaption">
                         <img src="images/book1.jpg" alt="The Hot Zone">
                     </div>
-                    <button>Add to Cart</button>
-                    <h3 id="bookcaption">The Hot Zone</h3>
-                    <p>Edition: ebook</p>
-                    <h3>$8.00</h3>
-                    <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                        Ipsum
-                        has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                        galley of type and scrambled it to make a type specimen book.</p>
-                    <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                        Ipsum
-                        has been the industry's standard dummy text ever since the 1500s, when an unknown printer took .</p> 
-                    <p1>Read more</p1>
-                 <!-- <button class="read_more" onclick="myFunction()">Read more</button>
-                    <p id="moreinfo" aria-live="polite"></p> --> 
+
+                    <div class="book1-right">
+
+                        <h3 id="bookcaption">The Hot Zone</h3>
+                        <button>Add to Cart</button>
+                        <p>Edition: ebook</p>
+                        <h3>$8.00</h3>
+                        <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                            Ipsum
+                            has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                            took a
+                            galley of type and scrambled it to make a type specimen book.</p>
+                        <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                            Ipsum
+                            has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                            took .</p>
+                        <p>Read more</p>
+                    </div>
+
+                    <!-- <button class="read_more" onclick="myFunction()">Read more</button>
+                        <p id="moreinfo" aria-live="polite"></p> -->
                 </div>
             </article>
 
-            <hr>
-        </section>
+            <section class="newsletter">
+                <article class="news-left">
+                    <h2>Newsletter sign-up</h2>
+                    <h4>Email<asterisk>*</asterisk>
+                        <form action="#">
+                            <input type="search" name="search"><br>
+                            <button>Submit</button>
+                            <!-- <div id="saveChanges" role="button" aria-pressed="false">Submit</div> -->
+                        </form>
+                </article>
 
-        <section class="newsletter">
-            <article>
-                <h2>Newsletter sign-up</h2>
-                <h4>Email<asterisk>*</asterisk>
-                    <form action="#">
-                        <input type="search" name="search"><br>
-                        <button>Submit</button>
-                        <!-- <div id="saveChanges" role="button" aria-pressed="false">Submit</div> -->
-                    </form>
-            </article>
+                <img src="images/book.jpg" alt="book">
+            </section>
 
-            <img src="images/book.jpg" alt="book">
-        </section>
+            <section class="featured_books">
 
-        <section class="featured_books">
-            <article>
                 <h2>Featured Books</h2>
                 <div class="article1" role="figure" aria-labelledby="caption1">
-                    <img src="images/book4.jpg"
+                    <img class="article-img" src="images/book4.jpg"
                         alt="Web Accessibility-web standard and regular complince book image">
                     <p id="caption1">
                         <h2 tabindex="0">Web Accessibility-web standard and regular complince book cover image</h2>
@@ -126,38 +117,29 @@
                     </p>
                 </div>
                 <div class="article2" role="figure" aria-labelledby="caption2">
-                    <img src="images/book3.jpg" alt="Social Engineering book image">
+                    <img class="article-img" src="images/book3.jpg" alt="Social Engineering book image">
                     <p id="caption2">
                         <h2 tabindex="0">Social Engineering</h2>
                         $5.00
                     </p>
                 </div>
                 <div class="article3" role="figure" aria-labelledby="caption3">
-                    <img src="images/book2.jpg" alt="Spot Says Goodnight book image">
+                    <img class="article-img" src="images/book2.jpg" alt="Spot Says Goodnight book image">
                     <p id="caption3">
                         <h2 tabindex="0">Spot Says Goodnight </h2>
                         <del>$10.00 </del> $5.00
                     </p>
                 </div>
-                <a href="#">View all</a>
-            </article>
+                <a class="viewall" href="#">View all</a>
 
-        </section>
-    </main>
-    <footer>
-        <p>Copyright &copy; 2015-Interesting Books</p>
-    </footer>
 
-    <!-- <script>
-        var itemCount = 0;
-        $('.add').click(function () {
-            itemCount++;
-            $('#itemCount').html(itemCount).css('display', 'block');
-        });
-        function myFunction() {
-            document.getElementById("moreinfo").innerHTML = "Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries";
-        }
-    </script> -->
+            </section>
+        </main>
+        <footer>
+            <p>Copyright &copy; 2015-Interesting Books</p>
+        </footer>
+
+    </div>
 </body>
 
 </html>
